@@ -1,5 +1,6 @@
 body {
     background-color: turquoise;
+    background-image: url(../images/background.jpg);
 }
 
 h3 {
@@ -8,27 +9,54 @@ h3 {
     padding-bottom: 10px;
 }
 
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    background-color: turquoise;
+    border: 4px ridge violet;
+    text-align: center;
+    font-size: 40px;
+}
+
+button:active {
+    background-color: violet;
+    border: 4px ridge turquoise;
+}
+
 .content-wrapper {
-    background-color: gray;
+    background-color: rgb(100, 100, 100);
     padding: 10px;
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
+    border: 4px outset violet;
 }
 
 .content {
     background-color: white;
-    height: 500px;
+    min-height: 400px;
 }
 
 .title {
+    font-family: 'Syncopate', sans-serif;
     font-size: 70px;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+.i {
+    font-style: italic;
 }
 
 .question-wrapper {
-    margin-top: 50px;
+    padding: 10px;
 }
 
 .answer:nth-last-of-type(4) {
@@ -37,14 +65,20 @@ h3 {
 
 .answer {
     font-weight: bold;
+    margin: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 4px ridge transparent;
 }
 
 .answer:hover {
-
+    background-color: turquoise;
+    border: 4px ridge violet;
 }
 
-.answer:active {
-
+.answer:active {   
+    background-color: violet;
+    border: 4px ridge turquoise;
 }
 
 .invisible {
@@ -54,12 +88,12 @@ h3 {
 
 @media screen and (max-width: 850px) {
     .title{
-        font-size: 50px;
+        font-size: 60px;
     }
 }
 
 @media screen and (max-width: 450px) {
     .title {
-        font-size: 40px;
+        font-size: 50px;
     }
 }
