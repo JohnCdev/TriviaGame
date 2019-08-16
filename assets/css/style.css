@@ -2,15 +2,64 @@ body {
     background-color: turquoise;
 }
 
+h3 {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 10px;
+}
+
 .content-wrapper {
     background-color: gray;
     padding: 10px;
     width: 90%;
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .content {
     background-color: white;
     height: 500px;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.question-wrapper {
+    margin-top: 50px;
+}
+
+.answer:nth-last-of-type(4) {
+    margin-top: 20px;
+}
+
+.answer {
+    font-weight: bold;
+}
+
+.answer:hover {
+
+}
+
+.answer:active {
+
+}
+
+.invisible {
+    display: none;
+}
+
+
+@media screen and (max-width: 850px) {
+    .title{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 40px;
+    }
 }
